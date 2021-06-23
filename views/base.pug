@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        block head
+            title Tours | #{taitle}
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+            link(rel="stylesheet", href="/css/style.css")
+            link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300,300i,700")
+            script(src="https://js.stripe.com/v3/")
+            
+    body 
+
+        //- Header
+        include _header
+
+
+        //- Content
+        block content 
+                   
+            
+
+        //- Footer
+        include _footer
+
+        
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js") 
+        //- script(src="/js/_mapbox.js") 
+        //- script(src="/js/_login.js") 
+        script(src="/js/bundle.js") 
